@@ -196,7 +196,7 @@ const Music = () => {
                             1
                         );
                         return <div
-                            ref={(el) => lyricRefs.current[ind] = el}
+                            ref={(el) => { lyricRefs.current[ind] = el; }}
                             onClick={() => identifyClicks(lyr.time)} key={ind}>
                             {
                                 lyr.text.split("").map((txt, index) => {
